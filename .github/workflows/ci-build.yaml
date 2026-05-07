@@ -16,7 +16,7 @@ jobs:
         ports: 
           - 5432
         env:
-          POSTGRES_PASSWORD: psgc3r3t
+          POSTGRES_PASSWORD: psg3cr3t
           POSTGRES_DB: testdb
         options: >-
           --health-cmd pg_isready
