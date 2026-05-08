@@ -1,0 +1,7 @@
+tkn pipeline start cd-pipeline \
+    -p repo-url="https://github.com/tiagorsdfonseca/devops-capstone-project.git" \
+    -p branch=cd-pipeline \
+    -p build-image=image-registry.openshift-image-registry.svc:5000/sn-labs-tiagorsdfons/accounts:1 \
+    -w name=pipeline-workspace,claimName=pipelinerun-pvc \
+    -s pipeline \
+    --showlog x
